@@ -1,9 +1,8 @@
 FROM ubuntu:latest
 
-
-
 MAINTAINER Ciaran Robb  
 
+ENV DEBIAN_FRONTEND noninteractive
 
 #Install dependencies
 RUN apt-get update && apt-get install -y --install-recommends \
@@ -19,7 +18,7 @@ x11proto-core-dev make cmake git libx11-dev libpcl-dev libarmadillo-dev && \
 WORKDIR /opt
 
 #get treeseg
-RUN git clone git@github.com:apburt/treeseg.git treeseg
+RUN git clone https://github.com/apburt/treeseg.git treeseg
 
 #folders etc
 
@@ -29,8 +28,6 @@ WORKDIR /opt/treeseg/build
 
 #make 
 RUN cmake ..
-
-WORKDIR /opt/treeseg
 
 RUN make -j$(nproc)
 
