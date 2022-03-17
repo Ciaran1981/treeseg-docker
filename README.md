@@ -3,7 +3,7 @@ A docker container for apburt's treeseg
 
 **What is docker ?**
 
-Docker is an ability to run virtual machine easily. You could build a container like this one for the sfm scripts & Micmac under every system. You just have to install docker on your system
+Docker is a program to run virtual machines easily.
 
 
 **How to run micmac-docker container ?**
