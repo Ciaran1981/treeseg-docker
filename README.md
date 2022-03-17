@@ -10,7 +10,7 @@ Docker is a program to run virtual machines easily.
 
 First you have to build the container by typing in a terminal :
 
-`docker build git://github.com/Ciaran1981/treeseg-docke -t treeseg`
+`docker build git://github.com/Ciaran1981/treeseg-docker -t treeseg`
 
 
 **How can I delete this thing ?**
